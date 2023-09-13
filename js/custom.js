@@ -1,7 +1,7 @@
 $(function () {
 
     $('#Main__content').fullpage({
-        anchors: ['mv', 'mc', 'md', 'mb', 'ft'],
+        anchors: ['mv', 'mc', 'md', 'mb', 'ml', 'ft'],
         navigation: false,
         css3: false,
         //반응형에서 fullpage 안하기.
@@ -16,7 +16,6 @@ $(function () {
         },
         afterLoad: function (lnk, idx) {
             console.log(lnk, idx);
-            // $('.gnb li').eq(idx - 1).addClass('on').siblings().removeClass('on');
             $('.Main__content .section').eq(idx - 1).addClass('on').siblings().removeClass('on');
             if (idx == 1) {
                 $('#header').removeClass('on')
@@ -98,3 +97,13 @@ $(function () {
 
 
 })
+
+
+
+var container = document.getElementById('map');
+var options = {
+    center: new kakao.maps.LatLng(33.450701, 126.570667),
+    level: 3
+};
+
+var map = new kakao.maps.Map(container, options);

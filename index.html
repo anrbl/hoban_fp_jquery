@@ -16,9 +16,11 @@
     <script src="./js/jquery.easings.min.js"></script>
     <script src="./js/scrolloverflow.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/custom.js"></script>
+    <script type="text/javascript"
+        src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script>
+    <script src="./js/custom.js" defer></script>
+
 </head>
-<!-- http://hobansummit-cs.co.kr/apt/# -->
 
 <body>
     <div class="wrap">
@@ -155,14 +157,39 @@
                                 </span>
                             </a>
                         </li>
+                        <li>
+                            <a href="">
+                                <strong>확정분양가</strong>
+                                <em>OK!</em>
+                                <span class="material-symbols-outlined">
+                                    emoji_transportation
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>전매 및 전대</strong>
+                                <em>OK!</em>
+                                <span class="material-symbols-outlined">
+                                    emoji_transportation
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>등기이전<b>(분양전환)</b></strong>
+                                <em>OK!</em>
+                                <span class="material-symbols-outlined">
+                                    emoji_transportation
+                                </span>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>
             </section>
             <section class="main__premium section">
                 <div class="inner">
-
-
                     <div class="txt_area">
                         <em>LOCATION PREMIUM</em>
                         <div class="title">
@@ -353,7 +380,7 @@
             <section class="main__design section">
                 <div class="right__inner">
                     <div class="txt_area">
-                        <em>LOCATION PREMIUM</em>
+                        <em>LANDMARK DESIGN</em>
                         <div class="title">
                             <h2>
                                 <span>스타일에서 디테일까지</span>
@@ -382,6 +409,40 @@
                         <div class="link__btn">
                             <a href="">BRAND STORY</a>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__location section">
+                <div class="inner">
+                    <div class="txt_area">
+                        <div class="tit">
+                            <em>HIVV PARK</em>
+                            <h2><span>Location</span><strong>HOBAN SUMMIT</strong></h2>
+                            <p>대구 북구의 중심! 45층 초고층 아파트! 생활의 클래스가 다릅니다.</p>
+                        </div>
+                        <h3><span>호반써밋 하이브파크</span> 찾아오시는길</h3>
+                    </div>
+                    <div class="location">
+                        <div class="map" id="map" style="width: 300px;height: 400px;">
+                            <script type="text/javascript"
+                                src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6d07716edce03f328f6f8b33f982035a"></script>
+                        </div>
+                        <ul class="lo__case">
+                            <li>
+                                <div class="text">
+                                    <strong>견본주택</strong>
+                                    <p>대구시 수성구 동대구로 283</p>
+                                </div>
+                                <a href="" target="_blank">견본주택 네이버지도보기</a>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <strong>현장</strong>
+                                    <p>대구시 북구 칠성동2가 725번지</p>
+                                </div>
+                                <a href="" target="_blank">현장 네이버지도 보기</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -429,10 +490,7 @@
                     <strong>top</strong>
                 </a>
             </footer>
-
         </div>
-
-
     </div>
 </body>
 
