@@ -914,7 +914,7 @@ http://gridcalculator.dk/#/1572/12/20/16
 .main__location .location .lo__case {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 30px;
   transform: translate(0, -50%);
   z-index: 100;
   display: flex;
@@ -927,7 +927,8 @@ http://gridcalculator.dk/#/1572/12/20/16
   padding: 40px;
   width: 280px;
   height: 350px;
-  background: var(--wc);
+  background: var(--mc);
+  border: 1px solid var(--sc);
   box-shadow: 7px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -937,20 +938,21 @@ http://gridcalculator.dk/#/1572/12/20/16
 
 .main__location .lo__case .text strong {
   display: block;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--mc);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--wc);
   margin: 0 0 16px 0;
 }
 
 .main__location .lo__case .text p {
   line-height: 20px;
+  color: var(--wc);
 }
 
 .main__location .lo__case a {
   display: block;
   font-size: 15px;
-  color: var(--gc);
+  color: var(--wc);
   text-align: center;
   padding: 12px 20px 11px 20px;
   border: 1px solid var(--lc);
@@ -958,9 +960,9 @@ http://gridcalculator.dk/#/1572/12/20/16
 }
 
 .main__location .lo__case a:hover {
-  color: var(--wc);
-  background: var(--gc);
-  border: 1px solid var(--gc);
+  color: var(--gc);
+  background: var(--wc);
+  border: 1px solid var(--wc);
 }
 
 #footer {
